@@ -13,8 +13,7 @@
 
 */
 
-      
- /*******************************************************************************
+/*******************************************************************************
  *
  *  fireSim.c
  *
@@ -174,7 +173,7 @@ int main ( int argc, char *argv[] )
     }
 
     /* NOTE 5: set an ignition time & pattern (this ignites the middle cell). */
-    cell = Cols/4 + Cols*(Rows/4);
+    cell = floor(Cols/2) + Cols*floor(Rows/2);
     ignMap[cell] = 0.0;
 
     /* NOTE 6: create a standard fuel model catalog and a flame length table. */
